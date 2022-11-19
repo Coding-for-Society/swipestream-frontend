@@ -1,10 +1,18 @@
 /* Left and right video */
 .leftVideo {
-  background-color: aqua;
+  background-color: aqua !important;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0px;
 }
 
 .rightVideo {
-  background-color: blueviolet;
+  background-color: blue !important;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: 0px;
 }
 
 /* Video sizes */
@@ -14,7 +22,7 @@
 }
 
 .videoSmall {
-  width: 20vw;
+  width: 20vw !important;
   height: 100vh;
 }
 
@@ -33,7 +41,8 @@
 }
 
 .videoContainer div {
-  transition: width 0.15s linear;
+  transition: all 0.15s ease-in-out;
+  display: inline-block;
 }
 
 .videoContainer li {

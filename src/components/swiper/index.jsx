@@ -1,48 +1,46 @@
 import { useState } from "react";
 import "./style.css";
 const defaultView = {
-  left: "leftVideo videoHalf",
-  right: "rightVideo videoHalf",
+  left: "videoHalf",
+  right: "videoHalf",
 };
 
 const Swiper = (props) => {
   const [classNames, setClassNames] = useState(defaultView);
 
   return (
-    <ul className="videoContainer">
-      <li>
-        <div
-          className={classNames.left}
-          onMouseEnter={() => {
-            setClassNames({
-              left: "leftVideo videoBig",
-              right: "rightVideo videoSmall",
-            });
-          }}
-          onMouseLeave={() => {
-            setClassNames(defaultView);
-          }}
-        >
-          <p>Left</p>
-        </div>
-      </li>
-      <li>
-        <div
-          className={classNames.right}
-          onMouseEnter={() => {
-            setClassNames({
-              left: "leftVideo videoSmall",
-              right: "rightVideo videoBig",
-            });
-          }}
-          onMouseLeave={() => {
-            setClassNames(defaultView);
-          }}
-        >
-          <p>Right</p>
-        </div>
-      </li>
-    </ul>
+    <div className="videoContainer">
+      <div
+        className={classNames.left}
+        style={{ width: "50vw" }}
+        onMouseEnter={() => {
+          setClassNames({
+            left: "videoBig",
+            right: "videoSmall",
+          });
+        }}
+        onMouseLeave={() => {
+          setClassNames(defaultView);
+        }}
+      >
+        <div className="leftVideo"></div>
+      </div>
+      <div
+        className={classNames.right}
+        style={{ width: "50vw" }}
+        onMouseEnter={() => {
+          setClassNames({
+            left: "videoSmall",
+            right: "videoBig",
+          });
+        }}
+        onMouseLeave={() => {
+          setClassNames(defaultView);
+        }}
+      >
+        <div className="rightVideo"></div>
+      </div>
+    </div>
   );
 };
 
