@@ -2,20 +2,25 @@
   width: 100vw;
   padding: 0px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 0px;
   padding-top: 10px;
 }
 
-.navBar li {
+.navBarLinks {
+  display: flex;
+  padding-right: 20px;
+}
+
+.navBarLinks li {
   list-style: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 .navBar a {
   text-decoration: none;
   color: var(--dark-blue);
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .navBar a:hover {

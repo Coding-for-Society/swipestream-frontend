@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import "./style.css";
+import Logo from "./Logo";
 
 const NavBar = (props) => {
   const authenticated = props.authenticated;
 
   return authenticated ? (
     <div>
+      <Logo />
       <ul className="navBar">
         <li>
           <Link to="/explore">Explore Streams</Link>
@@ -19,8 +21,9 @@ const NavBar = (props) => {
       </ul>
     </div>
   ) : (
-    <div>
-      <ul className="navBar">
+    <div className="navBar">
+      <Logo className="logo" />
+      <ul className="navBarLinks">
         <li>
           <Link to="/explore">Explore Streams</Link>
         </li>
