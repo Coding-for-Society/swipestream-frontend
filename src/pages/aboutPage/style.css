@@ -1,0 +1,49 @@
+.aboutPage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: var(--blue);
+}
+
+.aboutPage h1 {
+  margin-top: 10%;
+  font-size: 52px;
+  color: var(--pink);
+}
+
+.aboutPage p,
+.aboutPage h3 {
+  color: var(--rose);
+}
+
+.aboutPage p {
+  font-size: 20px;
+}
+
+.aboutPage h2 {
+  color: var(--pink);
+  font-size: 42px;
+}
+
+.aboutPage h3 {
+  font-size: 32px;
+}
+
+.teamCenterContainer {
+  display: flex;
+  justify-content: center;
+}
+.teamContainer {
+  display: flex;
+}
+
+.teamContainer .teamMemberEntry {
+  padding: 0 40px;
+}
+
+.aboutTextContainer {
+  text-align: center;
+}

@@ -7,6 +7,7 @@ import {
 import VideoPage from "./pages/videoPage";
 import LandingPage from "./pages/landingPage";
 import NavBar from "./components/navBar";
+import AboutPage from "./pages/aboutPage";
 
 const Routes = () => {
   const routes = createBrowserRouter([
@@ -34,6 +35,10 @@ const Routes = () => {
         {
           path: "logout",
           element: <></>,
+        },
+        {
+          path: "about",
+          element: <AboutPage />,
         },
         {
           path: "friends",

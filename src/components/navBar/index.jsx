@@ -13,7 +13,7 @@ const NavBar = (props) => {
           <Link to="/explore">Profile</Link>
         </li>
         <li>
-          <Link>About us</Link>
+          <Link to="/about">About us</Link>
         </li>
         <li>
           <Link>Logout</Link>
@@ -30,7 +30,7 @@ const NavBar = (props) => {
           <Link to="/explore">Explore Streams</Link>
         </li>
         <li>
-          <Link>About us</Link>
+          <Link to="/about">About us</Link>
         </li>
         <li>
           <Link>Login</Link>
