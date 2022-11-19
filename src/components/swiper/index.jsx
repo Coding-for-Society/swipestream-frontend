@@ -10,6 +10,7 @@ const Swiper = (props) => {
 
   return (
     <div className="videoContainer">
+      <div className="videoTreshhold"></div>
       <div
         className={classNames.left}
         onMouseEnter={() => {

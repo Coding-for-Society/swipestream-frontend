@@ -1,9 +1,10 @@
 const Illustration = (props) => (
   <svg
-    width={842}
-    height={695}
+    width={1090}
+    height={900}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 842 695"
     {...props}
   >
     <ellipse cx={641} cy={393.5} rx={155} ry={152.5} fill="#E96D6D" />

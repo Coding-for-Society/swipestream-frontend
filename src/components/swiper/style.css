@@ -17,12 +17,12 @@
 
 /* Video sizes */
 .videoBig {
-  width: 80% !important;
+  width: 75% !important;
   height: 100vh;
 }
 
 .videoSmall {
-  width: 20% !important;
+  width: 25% !important;
   height: 100vh;
 }
 
@@ -50,4 +50,20 @@
 .videoContainer p {
   margin: 0px;
   font-size: 32px;
+}
+
+.videoTreshhold {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 50%;
+  background-color: none;
+  height: 100vh;
+  z-index: 20;
+}
+
+.hidden {
+  display: none;
 }
