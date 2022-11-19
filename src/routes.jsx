@@ -1,13 +1,15 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import VideoPage from "./pages/videoPage";
+import LandingPage from "./pages/landingPage";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <></>,
+    element: <LandingPage />,
   },
   {
     path: "explore",
-    element: <></>,
+    element: <VideoPage />,
   },
   {
     path: "login",

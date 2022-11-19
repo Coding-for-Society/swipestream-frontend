@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import VideoPage from './pages/videoPage';
+import { RouterProvider } from "react-router-dom";
+import VideoPage from "./pages/videoPage";
+import routes from "./routes";
 
 function App() {
-  return (
-    <div>
-      <VideoPage/>
-    </div>
-  );
+  return <RouterProvider router={routes} />;
 }
 
 export default App;
