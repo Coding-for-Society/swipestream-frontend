@@ -1,7 +1,7 @@
 import teamConfig from "./teamConfig";
 import "./style.css";
-import AboutIllustration1 from "./AboutIllustration2";
-import AboutIllustration2 from "./AboutIllustration1";
+import AboutIllustration1 from "./AboutIllustration1";
+import AboutIllustration2 from "./AboutIllustration2";
 
 const AboutPage = () => {
   return (
