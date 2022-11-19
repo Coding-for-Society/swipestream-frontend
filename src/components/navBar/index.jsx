@@ -10,7 +10,7 @@ const NavBar = (props) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    if (location.pathname == "/about") {
+    if (location.pathname === "/about") {
       setTheme("dark");
     } else {
       setTheme("light");

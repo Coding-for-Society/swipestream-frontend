@@ -4,8 +4,6 @@ import AboutIllustration1 from "./AboutIllustration2";
 import AboutIllustration2 from "./AboutIllustration1";
 
 const AboutPage = () => {
-  const team = teamConfig;
-
   return (
     <div className="aboutPage">
       <div className="aboutTextContainer">
@@ -23,7 +21,7 @@ const AboutPage = () => {
         <div className="teamContainer">
           {teamConfig.map((member) => (
             <div className="teamMemberEntry">
-              <img src={member.picture} />
+              <img src={member.picture} alt={"Pciture of" + member.name} />
               <h3>{member.name}</h3>
               <p>{member.role}</p>
               <p>{member.studies}</p>
