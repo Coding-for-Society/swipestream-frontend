@@ -6,14 +6,14 @@ const NavBar = (props) => {
   const authenticated = props.authenticated;
 
   return authenticated ? (
-    <div>
+    <div className="navBar">
       <Logo />
-      <ul className="navBar">
+      <ul className="navBarLinks">
         <li>
-          <Link to="/explore">Explore Streams</Link>
+          <Link to="/explore">Profile</Link>
         </li>
         <li>
-          <Link>Your watchlist</Link>
+          <Link>About us</Link>
         </li>
         <li>
           <Link>Logout</Link>
@@ -22,7 +22,9 @@ const NavBar = (props) => {
     </div>
   ) : (
     <div className="navBar">
-      <Logo className="logo" />
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
       <ul className="navBarLinks">
         <li>
           <Link to="/explore">Explore Streams</Link>

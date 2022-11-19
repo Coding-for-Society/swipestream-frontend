@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div className="landingPage">
-      <NavBar authenticated={false} />
       <h1>Your next stream is just 5 swipes away.</h1>
       <div className="startingButtonContainer">
         <Link to="/explore">
