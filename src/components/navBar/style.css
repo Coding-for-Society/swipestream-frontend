@@ -1,0 +1,23 @@
+.navBar {
+  width: 100vw;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.navBar li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-size: 22px;
+}
+
+.navBar a:hover {
+  color: var(--blue);
+}

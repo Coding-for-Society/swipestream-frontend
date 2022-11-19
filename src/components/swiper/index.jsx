@@ -12,7 +12,6 @@ const Swiper = (props) => {
     <div className="videoContainer">
       <div
         className={classNames.left}
-        style={{ width: "50vw" }}
         onMouseEnter={() => {
           setClassNames({
             left: "videoBig",
@@ -27,7 +26,6 @@ const Swiper = (props) => {
       </div>
       <div
         className={classNames.right}
-        style={{ width: "50vw" }}
         onMouseEnter={() => {
           setClassNames({
             left: "videoSmall",
