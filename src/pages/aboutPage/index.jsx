@@ -1,5 +1,7 @@
 import teamConfig from "./teamConfig";
 import "./style.css";
+import AboutIllustration1 from "./AboutIllustration2";
+import AboutIllustration2 from "./AboutIllustration1";
 
 const AboutPage = () => {
   const team = teamConfig;
@@ -29,6 +31,8 @@ const AboutPage = () => {
           ))}
         </div>
       </div>
+      <AboutIllustration1 className="aboutIllustration1" />
+      <AboutIllustration2 className="aboutIllustration2" />
     </div>
   );
 };

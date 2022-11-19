@@ -6,6 +6,7 @@
   left: 0;
   margin: 0;
   background-color: var(--blue);
+  z-index: -10;
 }
 
 .aboutPage h1 {
@@ -46,4 +47,17 @@
 
 .aboutTextContainer {
   text-align: center;
+}
+
+.aboutIllustration1 {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.aboutIllustration2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
