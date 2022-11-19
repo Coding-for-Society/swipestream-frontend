@@ -1,0 +1,48 @@
+/* Left and right video */
+.leftVideo {
+  background-color: aqua;
+}
+
+.rightVideo {
+  background-color: blueviolet;
+}
+
+/* Video sizes */
+.videoBig {
+  width: 80vw !important;
+  height: 100vh;
+}
+
+.videoSmall {
+  width: 20vw;
+  height: 100vh;
+}
+
+.videoHalf {
+  height: 100vh;
+  width: 50vw;
+}
+
+/* Video Container: General css */
+
+.videoContainer {
+  padding: 0px;
+  position: relative;
+  top: 0px;
+  margin: 0px;
+}
+
+.videoContainer div {
+  transition: width 0.15s linear;
+}
+
+.videoContainer li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+}
+
+.videoContainer p {
+  margin: 0px;
+  font-size: 32px;
+}
