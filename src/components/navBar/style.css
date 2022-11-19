@@ -1,3 +1,4 @@
+/* General css*/
 .navBar {
   width: 100vw;
   padding: 0px;
@@ -21,20 +22,47 @@
   padding: 10px 30px;
 }
 
-.navBar a {
+/* Light Theme (on light backgrounds) */
+.navBar.light a {
   text-decoration: none;
   color: var(--dark-blue);
   font-size: 26px;
 }
 
-.navBar a:hover {
+.navBar.light a:hover {
   color: var(--blue);
 }
 
-.navBar .logo:hover .logoText {
+.navBar.light .logo:hover .logoText {
   fill: var(--blue);
 }
 
-.navBar .logo:hover .logoTriangles {
+.navBar.light .logo:hover .logoTriangles {
+  stroke: var(--red);
+}
+
+/* Dark Theme (on dark baxckgrounds)*/
+.navBar.dark a {
+  text-decoration: none;
+  color: var(--rose);
+  font-size: 26px;
+}
+
+.navBar.dark a:hover {
+  color: var(--green);
+}
+
+.navBar.dark .logo .logoText {
+  fill: var(--rose);
+}
+
+.navBar.dark .logo .logoTriangles {
+  stroke: var(--dark-blue);
+}
+.navBar.dark .logo:hover .logoText {
+  fill: var(--green);
+}
+
+.navBar.dark .logo:hover .logoTriangles {
   stroke: var(--red);
 }

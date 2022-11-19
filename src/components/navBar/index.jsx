@@ -1,16 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./style.css";
 import Logo from "./Logo";
+import { useEffect, useState } from "react";
 
 const NavBar = (props) => {
   const authenticated = props.authenticated;
+  const location = useLocation();
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (location.pathname == "/about") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }, [location.pathname]);
 
   return authenticated ? (
-    <div className="navBar">
+    <div className={"navBar " + theme}>
       <Logo />
       <ul className="navBarLinks">
         <li>
-          <Link to="/explore">Profile</Link>
+          <Link to="/profile">Profile</Link>
         </li>
         <li>
           <Link to="/about">About us</Link>
@@ -21,7 +33,7 @@ const NavBar = (props) => {
       </ul>
     </div>
   ) : (
-    <div className="navBar">
+    <div className={"navBar " + theme}>
       <Link to="/">
         <Logo className="logo" />
       </Link>

@@ -1,4 +1,3 @@
-import NavBar from "../../components/navBar";
 import "./style.css";
 import Illustration from "./Illustration";
 import Illustration2 from "./Illustration2";
