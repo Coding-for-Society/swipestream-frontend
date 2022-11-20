@@ -6,6 +6,7 @@ import mergePreferences from "../../functions/mergePreferences/MergePreferences"
 import Arrow from "./Arrow";
 import CircleIllustration from "./CircleIllustration";
 import FeedBackIllustration from "./feedBackIllustration";
+import RequestTwoRecommendationsMock from "../../api/RequestTwoRecommendationsMock";
 import "./style.css";
 
 const defaultView = {
@@ -71,7 +72,7 @@ const VideoPage = (props) => {
     setPreferences(newPreferences);
 
     // Fetch new videos
-    let recommendedVideos = RequestTwo(newPreferences);
+    let recommendedVideos = RequestTwoRecommendationsMock(newPreferences);
 
     let newActiveVideos = {
       left: { active: false, video: recommendedVideos.first },
