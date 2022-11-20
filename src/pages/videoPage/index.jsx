@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import RequestTwoRecommendationsMock from "../../api/RequestTwoRecommendationsMock";
 import VideoPlayer from "../../components/videoPlayer";
 import mergePreferences from "../../functions/mergePreferences/MergePreferences";
-import StartingButton from "../landingPage/startingButton";
 import Arrow from "./Arrow";
 import CircleIllustration from "./CircleIllustration";
 import FeedBackIllustration from "./feedBackIllustration";
@@ -16,7 +15,6 @@ const defaultView = {
 
 const VideoPage = (props) => {
   const navigate = useNavigate();
-  const [showContinue, setContinue] = useState(false);
   const [feedback, setFeedback] = useState(false);
   const [swipes, setSwipes] = useState(5);
   const [preferences, setPreferences] = useState({

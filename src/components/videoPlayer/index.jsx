@@ -14,9 +14,6 @@ const VideoPlayer = (props) => {
     }
   }, [active]);
 
-  useEffect(() => {
-    console.log(video);
-  }, []);
   return (
     <div className={"videoPlayer " + className}>
       {active ? (
