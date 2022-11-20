@@ -1,0 +1,15 @@
+.video {
+  width: 640px;
+  height: 360px;
+  background-color: var(--blue);
+}
+
+.poster {
+  width: 400px;
+  height: 600px;
+  background-color: var(--dark-blue);
+}
+
+.videoPlayer {
+  transition: all 0.5s linear;
+}

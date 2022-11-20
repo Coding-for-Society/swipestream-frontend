@@ -10,7 +10,7 @@
 }
 
 .aboutPage h1 {
-  margin-top: 200px;
+  padding-top: 50px;
   font-size: 52px;
   color: var(--pink);
 }
