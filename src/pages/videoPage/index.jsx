@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import RequestTwoRecommendationsMock from "../../api/RequestTwoRecommendationsMock";
+import { RequestTwo } from "../../api/ReuestTwoRecommendations";
 import VideoPlayer from "../../components/videoPlayer";
 import mergePreferences from "../../functions/mergePreferences/MergePreferences";
 import Arrow from "./Arrow";
@@ -71,7 +71,7 @@ const VideoPage = (props) => {
     setPreferences(newPreferences);
 
     // Fetch new videos
-    let recommendedVideos = RequestTwoRecommendationsMock(newPreferences);
+    let recommendedVideos = RequestTwo(newPreferences);
 
     let newActiveVideos = {
       left: { active: false, video: recommendedVideos.first },
