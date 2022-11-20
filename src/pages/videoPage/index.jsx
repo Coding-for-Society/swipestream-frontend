@@ -144,15 +144,7 @@ const VideoPage = (props) => {
 
   return feedback ? (
     <div className="feedbackContainer">
-      <div
-        className="feedbackCenter"
-        onMouseEnter={() => {
-          setContinue(true);
-        }}
-        onMouseLeave={() => {
-          setContinue(false);
-        }}
-      >
+      <div className="feedbackCenter">
         <FeedBackIllustration
           onClick={() => {
             setFeedback(false);
