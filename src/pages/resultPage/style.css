@@ -1,0 +1,53 @@
+.errorMessage {
+  position: absolute;
+  margin: 0;
+  top: 200px;
+}
+
+.resultContainer {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+
+.resultIllustration {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.resultHeading {
+  position: absolute;
+  top: 120px;
+  margin: 0;
+  left: 280px;
+  z-index: 20;
+  font-size: 40px;
+  color: var(--dark-blue);
+}
+
+.finalResult {
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  width: 500px;
+}
+
+.finalResult img {
+  height: 400px;
+}
+
+.finalResult h1 {
+  color: var(--dark-blue);
+}
+
+.finalResult p {
+  color: var(--dark-blue);
+  font-size: 24px;
+}
+
+.finalResult a {
+  color: var(--blue);
+  font-size: 24px;
+}

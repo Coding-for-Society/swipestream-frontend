@@ -103,3 +103,78 @@
   background-color: black;
   z-index: 10;
 }
+
+.swipes {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  bottom: 10px;
+  margin: 0 0;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 40px;
+}
+.rightArrow {
+  transform: rotate(180deg);
+  position: absolute;
+  right: 40px;
+}
+
+.leftArrow {
+  cursor: pointer;
+}
+
+.rightArrow {
+  cursor: pointer;
+}
+
+.leftArrow:hover .arrow {
+  stroke: var(--blue);
+}
+
+.rightArrow:hover .arrow {
+  stroke: var(--green);
+}
+
+.feedbackContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.feedbackCenter {
+  width: 300px;
+}
+
+.feedbackContainer h1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  font-size: 200px;
+  padding-top: 100px;
+  padding-left: 450px;
+  top: 0;
+  color: var(--blue);
+}
+
+.feedbackContainer svg:hover {
+  cursor: pointer;
+}
+.feedbackContainer svg:hover .continueButton {
+  stroke: var(--dark-blue);
+}
+
+.feedbackContainer svg:hover .continueCircle {
+  stroke: var(--green);
+}
+
+.feedbackCenter svg:hover .continueTriangle {
+  fill: var(--dark-blue);
+}

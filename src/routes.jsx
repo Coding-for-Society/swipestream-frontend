@@ -8,6 +8,7 @@ import VideoPage from "./pages/videoPage";
 import LandingPage from "./pages/landingPage";
 import NavBar from "./components/navBar";
 import AboutPage from "./pages/aboutPage";
+import ResultPage from "./pages/resultPage";
 
 const Routes = () => {
   const routes = createBrowserRouter([
@@ -41,8 +42,8 @@ const Routes = () => {
           element: <AboutPage />,
         },
         {
-          path: "friends",
-          element: <></>,
+          path: "results",
+          element: <ResultPage />,
         },
       ],
     },

@@ -6,8 +6,11 @@
 
 .poster {
   width: 400px;
+  height: 640px;
+}
+
+.poster img {
   height: 600px;
-  background-color: var(--dark-blue);
 }
 
 .videoPlayer {

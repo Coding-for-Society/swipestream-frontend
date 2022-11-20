@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./style.css";
 
 const VideoPlayer = (props) => {
-  let active = props.active;
+  let { active, video } = props.video;
 
   const [className, setClassName] = useState("poster");
 
@@ -13,14 +13,18 @@ const VideoPlayer = (props) => {
       setClassName("poster");
     }
   }, [active]);
+
+  useEffect(() => {
+    console.log(video);
+  }, []);
   return (
     <div className={"videoPlayer " + className}>
       {active ? (
-        <video autoplay={true} controls={false}>
-          <src></src>
+        <video autoPlay={true} controls={false}>
+          <source></source>
         </video>
       ) : (
-        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/space-movie-poster-design-template-18133e937d93002c68b4649ea234d75f_screen.jpg?ts=1636996611"></img>
+        <img src={video.poster_link} alt="Poster"></img>
       )}
     </div>
   );
